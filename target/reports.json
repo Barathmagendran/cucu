@@ -1,0 +1,71 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Add new location",
+        "description": "",
+        "id": "google-map-api;add-new-location",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3780600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User want add my payload",
+            "match": {
+              "location": "GoogleApi.user_want_add_my_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8081005800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User submit \"Post\" API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Post\"",
+                  "offset": 12
+                }
+              ],
+              "location": "GoogleApi.user_submit_API(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2970400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User want to assert the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "GoogleApi.user_want_to_assert_the_status_code_is(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google map API",
+    "description": "  I want to use this template for my feature file",
+    "id": "google-map-api",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/google.feature",
+    "tags": []
+  }
+]
